@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+}
+h1{
+    text-align: center;
+    border: 2px solid rgb(7, 7, 7);
+    background-color: rgba(15, 34, 116, 0.6);
+    padding: 5px;
+    margin: -10px;
+    font-family: monospace;
+    width: 110%;
+    
+}
+.bigger_card1{
+    width: 500px;
+    border: 1px solid rgb(143, 139, 139);
+    float: left;
+    margin: 10px 5px;
+    padding: 15px;
+    height: 350px;
+}
+
+.bigger_card2{
+    width: 500px;
+    border: 1px solid rgb(143, 139, 139);
+    float: right;
+    margin: 10px 5px;
+    padding: 15px;
+    height: 350px;
+}
+
+#presentation{
+    text-align:justify;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+}
+
+#container{
+    width: 1200px;
+    border: 1px solid rgb(143, 139, 139);
+    margin: auto;
+    height: 400px;
+}
