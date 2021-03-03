@@ -20,11 +20,19 @@ h1{
     height: 350px;
 }
 
+#containerb{
+    height: 380px;
+    width: 8%;
+    border: 1px solid rgb(143, 139, 139);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
 .bigger_card2{
     width: 500px;
     border: 1px solid rgb(143, 139, 139);
     float: right;
-    margin: 10px 5px;
+    margin: 10px 5px 10px 5px;
     padding: 15px;
     height: 350px;
 }
@@ -41,4 +49,16 @@ h1{
     border: 1px solid rgb(143, 139, 139);
     margin: auto;
     height: 400px;
+
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-between;
+
+}
+
+#conversor{
+    margin-top:170px;
+    text-align: center;
+    align-content: center;
 }
