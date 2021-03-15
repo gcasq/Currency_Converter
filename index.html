@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script defer src='./script.js'></script>
-    <script src="./jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-<h1>Personal Currency Converter</h1>
+<h1 id="present">Personal Currency Converter</h1>
 
 <h4 id="presentation">That is my personal currency converter website, 
     developed with the objetive of practicing my coding skills and for me to learn better about
@@ -25,181 +25,13 @@
 
         <div>
             Escolha a moeda a ser convertida:
-            <select name="province" id="moeda1" onclick="botao1()" required>
+            <select name="province" style="float: right;" id="moeda1" required>
                 <option value="none" selected="selected"> -- choose one --
-                <option value="AED">AED
-                <option value="AFN">AFN
-                <option value="ALL">ALL
-                <option value="AMD">AMD
-                <option value="ANG">ANG
-                <option value="AOA">AOA
-                <option value="ARS">ARS
-                <option value="AUD">AUD
-                <option value="AWG">AWG
-                <option value="AZN">AZN
-                <option value="BAM">BAM
-                <option value="BBD">BBD
-                <option value="BDT">BDT
-                <option value="BGN">BGN
-                <option value="BHD">BHD
-                <option value="BIF">BIF
-                <option value="BMD">BMD
-                <option value="BND">BND
-                <option value="BOB">BOB
-                <option value="BRL">BRL
-                <option value="BSD">BSD
-                <option value="BTC">BTC
-                <option value="BTN">BTN
-                <option value="BWP">BWP
-                <option value="BYN">BYN
-                <option value="BYR">BYR
-                <option value="BZD">BZD
-                <option value="CAD">CAD
-                <option value="CDF">CDF
-                <option value="CHF">CHF
-                <option value="CLF">CLF
-                <option value="CLP">CLP
-                <option value="CNY">CNY
-                <option value="COP">COP
-                <option value="CRC">CRC
-                <option value="CUC">CUC
-                <option value="CUP">CUP
-                <option value="CVE">CVE
-                <option value="CZK">CZK
-                <option value="DJF">DJF
-                <option value="DKK">DKK
-                <option value="DOP">DOP
-                <option value="DZD">DZD
-                <option value="EGP">EGP
-                <option value="ERN">ERN
-                <option value="ETB">ETB
-                <option value="EUR">EUR
-                <option value="FJD">FJD
-                <option value="FKP">FKP
-                <option value="GBP">GBP
-                <option value="GEL">GEL
-                <option value="GGP">GGP
-                <option value="GHS">GHS
-                <option value="GIP">GIP
-                <option value="GMD">GMD
-                <option value="GNF">GNF
-                <option value="GTQ">GTQ
-                <option value="GYD">GYD
-                <option value="HKD">HKD
-                <option value="HNL">HNL
-                <option value="HRK">HRK
-                <option value="HTG">HTG
-                <option value="HUF">HUF
-                <option value="IDR">IDR
-                <option value="ILS">ILS
-                <option value="IMP">IMP
-                <option value="INR">INR
-                <option value="IQD">IQD
-                <option value="IRR">IRR
-                <option value="ISK">ISK
-                <option value="JEP">JEP
-                <option value="JMD">JMD
-                <option value="JOD">JOD
-                <option value="JPY">JPY
-                <option value="KES">KES
-                <option value="KGS">KGS
-                <option value="KHR">KHR
-                <option value="KMF">KMF
-                <option value="KPW">KPW
-                <option value="KRW">KRW
-                <option value="KWD">KWD
-                <option value="KYD">KYD
-                <option value="KZT">KZT
-                <option value="LAK">LAK
-                <option value="LBP">LBP
-                <option value="LKR">LKR
-                <option value="LRD">LRD
-                <option value="LSL">LSL
-                <option value="LTL">LTL
-                <option value="LVL">LVL
-                <option value="LYD">LYD
-                <option value="MAD">MAD
-                <option value="MDL">MDL
-                <option value="MGA">MGA
-                <option value="MKD">MKD
-                <option value="MMK">MMK
-                <option value="MNT">MNT
-                <option value="MOP">MOP
-                <option value="MRO">MRO
-                <option value="MUR">MUR
-                <option value="MVR">MVR
-                <option value="MWK">MWK
-                <option value="MXN">MXN
-                <option value="MYR">MYR
-                <option value="MZN">MZN
-                <option value="NAD">NAD
-                <option value="NGN">NGN
-                <option value="NIO">NIO
-                <option value="NOK">NOK
-                <option value="NPR">NPR
-                <option value="NZD">NZD
-                <option value="OMR">OMR
-                <option value="PAB">PAB
-                <option value="PEN">PEN
-                <option value="PGK">PGK
-                <option value="PHP">PHP
-                <option value="PKR">PKR
-                <option value="PLN">PLN
-                <option value="PYG">PYG
-                <option value="QAR">QAR
-                <option value="RON">RON
-                <option value="RSD">RSD
-                <option value="RUB">RUB
-                <option value="RWF">RWF
-                <option value="SAR">SAR
-                <option value="SBD">SBD
-                <option value="SCR">SCR
-                <option value="SDG">SDG
-                <option value="SEK">SEK
-                <option value="SGD">SGD
-                <option value="SHP">SHP
-                <option value="SLL">SLL
-                <option value="SOS">SOS
-                <option value="SRD">SRD
-                <option value="STD">STD
-                <option value="SVC">SVC
-                <option value="SYP">SYP
-                <option value="SZL">SZL
-                <option value="THB">THB
-                <option value="TJS">TJS
-                <option value="TMT">TMT
-                <option value="TND">TND
-                <option value="TOP">TOP
-                <option value="TRY">TRY
-                <option value="TTD">TTD
-                <option value="TWD">TWD
-                <option value="TZS">TZS
-                <option value="UAH">UAH
-                <option value="UGX">UGX
-                <option value="USD">USD
-                <option value="UYU">UYU
-                <option value="UZS">UZS
-                <option value="VEF">VEF
-                <option value="VND">VND
-                <option value="VUV">VUV
-                <option value="WST">WST
-                <option value="XAF">XAF
-                <option value="XAG">XAG
-                <option value="XAU">XAU
-                <option value="XCD">XCD
-                <option value="XDR">XDR
-                <option value="XOF">XOF
-                <option value="XPF">XPF
-                <option value="YER">YER
-                <option value="ZAR">ZAR
-                <option value="ZMK">ZMK
-                <option value="ZMW">ZMW
-                <option value="ZWL">ZWL        
             </select>
         </div>
-        <div>
+        <div style="margin-top: 50px;" >
             Escolha a quantidade:
-            <input type="float" id="valor1" size="3" required>
+            <input type="float" style="float: right;" id="valor1" size="3" required>
         </div>
     </div>
     <div id="containerb">
@@ -211,185 +43,14 @@
         <div>
             Escolha a moeda alvo:
 <!-- Esta é a sintaxe de um Drop Down menu!-->
-            <select name="province2" id="moeda2" onclick="botao2()" required>
-                <option value="none" selected="selected"> -- choose one --
-                <option value="AED">AED
-                <option value="AFN">AFN
-                <option value="ALL">ALL
-                <option value="AMD">AMD
-                <option value="ANG">ANG
-                <option value="AOA">AOA
-                <option value="ARS">ARS
-                <option value="AUD">AUD
-                <option value="AWG">AWG
-                <option value="AZN">AZN
-                <option value="BAM">BAM
-                <option value="BBD">BBD
-                <option value="BDT">BDT
-                <option value="BGN">BGN
-                <option value="BHD">BHD
-                <option value="BIF">BIF
-                <option value="BMD">BMD
-                <option value="BND">BND
-                <option value="BOB">BOB
-                <option value="BRL">BRL
-                <option value="BSD">BSD
-                <option value="BTC">BTC
-                <option value="BTN">BTN
-                <option value="BWP">BWP
-                <option value="BYN">BYN
-                <option value="BYR">BYR
-                <option value="BZD">BZD
-                <option value="CAD">CAD
-                <option value="CDF">CDF
-                <option value="CHF">CHF
-                <option value="CLF">CLF
-                <option value="CLP">CLP
-                <option value="CNY">CNY
-                <option value="COP">COP
-                <option value="CRC">CRC
-                <option value="CUC">CUC
-                <option value="CUP">CUP
-                <option value="CVE">CVE
-                <option value="CZK">CZK
-                <option value="DJF">DJF
-                <option value="DKK">DKK
-                <option value="DOP">DOP
-                <option value="DZD">DZD
-                <option value="EGP">EGP
-                <option value="ERN">ERN
-                <option value="ETB">ETB
-                <option value="EUR">EUR
-                <option value="FJD">FJD
-                <option value="FKP">FKP
-                <option value="GBP">GBP
-                <option value="GEL">GEL
-                <option value="GGP">GGP
-                <option value="GHS">GHS
-                <option value="GIP">GIP
-                <option value="GMD">GMD
-                <option value="GNF">GNF
-                <option value="GTQ">GTQ
-                <option value="GYD">GYD
-                <option value="HKD">HKD
-                <option value="HNL">HNL
-                <option value="HRK">HRK
-                <option value="HTG">HTG
-                <option value="HUF">HUF
-                <option value="IDR">IDR
-                <option value="ILS">ILS
-                <option value="IMP">IMP
-                <option value="INR">INR
-                <option value="IQD">IQD
-                <option value="IRR">IRR
-                <option value="ISK">ISK
-                <option value="JEP">JEP
-                <option value="JMD">JMD
-                <option value="JOD">JOD
-                <option value="JPY">JPY
-                <option value="KES">KES
-                <option value="KGS">KGS
-                <option value="KHR">KHR
-                <option value="KMF">KMF
-                <option value="KPW">KPW
-                <option value="KRW">KRW
-                <option value="KWD">KWD
-                <option value="KYD">KYD
-                <option value="KZT">KZT
-                <option value="LAK">LAK
-                <option value="LBP">LBP
-                <option value="LKR">LKR
-                <option value="LRD">LRD
-                <option value="LSL">LSL
-                <option value="LTL">LTL
-                <option value="LVL">LVL
-                <option value="LYD">LYD
-                <option value="MAD">MAD
-                <option value="MDL">MDL
-                <option value="MGA">MGA
-                <option value="MKD">MKD
-                <option value="MMK">MMK
-                <option value="MNT">MNT
-                <option value="MOP">MOP
-                <option value="MRO">MRO
-                <option value="MUR">MUR
-                <option value="MVR">MVR
-                <option value="MWK">MWK
-                <option value="MXN">MXN
-                <option value="MYR">MYR
-                <option value="MZN">MZN
-                <option value="NAD">NAD
-                <option value="NGN">NGN
-                <option value="NIO">NIO
-                <option value="NOK">NOK
-                <option value="NPR">NPR
-                <option value="NZD">NZD
-                <option value="OMR">OMR
-                <option value="PAB">PAB
-                <option value="PEN">PEN
-                <option value="PGK">PGK
-                <option value="PHP">PHP
-                <option value="PKR">PKR
-                <option value="PLN">PLN
-                <option value="PYG">PYG
-                <option value="QAR">QAR
-                <option value="RON">RON
-                <option value="RSD">RSD
-                <option value="RUB">RUB
-                <option value="RWF">RWF
-                <option value="SAR">SAR
-                <option value="SBD">SBD
-                <option value="SCR">SCR
-                <option value="SDG">SDG
-                <option value="SEK">SEK
-                <option value="SGD">SGD
-                <option value="SHP">SHP
-                <option value="SLL">SLL
-                <option value="SOS">SOS
-                <option value="SRD">SRD
-                <option value="STD">STD
-                <option value="SVC">SVC
-                <option value="SYP">SYP
-                <option value="SZL">SZL
-                <option value="THB">THB
-                <option value="TJS">TJS
-                <option value="TMT">TMT
-                <option value="TND">TND
-                <option value="TOP">TOP
-                <option value="TRY">TRY
-                <option value="TTD">TTD
-                <option value="TWD">TWD
-                <option value="TZS">TZS
-                <option value="UAH">UAH
-                <option value="UGX">UGX
-                <option value="USD">USD
-                <option value="UYU">UYU
-                <option value="UZS">UZS
-                <option value="VEF">VEF
-                <option value="VND">VND
-                <option value="VUV">VUV
-                <option value="WST">WST
-                <option value="XAF">XAF
-                <option value="XAG">XAG
-                <option value="XAU">XAU
-                <option value="XCD">XCD
-                <option value="XDR">XDR
-                <option value="XOF">XOF
-                <option value="XPF">XPF
-                <option value="YER">YER
-                <option value="ZAR">ZAR
-                <option value="ZMK">ZMK
-                <option value="ZMW">ZMW
-                <option value="ZWL">ZWL
-  
-        
+            <select name="province2"  style="float: right;" id="moeda2" onclick="botao2()" required>
+                <option value="none" selected="selected"> -- choose one --        
             </select>
 
-
         </div>
-        <div>
+        <div style="margin-top: 50px;">
             Quantidade final:
-                <div id="answer"></div>
+                <div id="answer" style="float: right;"></div>
 
         </div>
 
@@ -397,6 +58,9 @@
 
 </div>
 
+<select name="mopa" id="mopa">
+    
+</select>
 <div>
 
 

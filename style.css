@@ -1,7 +1,7 @@
 body{
-    background-color: white;
+    background-color: rgb(224, 220, 220);
 }
-h1{
+#present{
     text-align: center;
     border: 2px solid rgb(7, 7, 7);
     background-color: rgba(15, 34, 116, 0.6);
@@ -39,7 +39,7 @@ h1{
 
 #presentation{
     text-align:justify;
-    color: blue;
+    color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
 }

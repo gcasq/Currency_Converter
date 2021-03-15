@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src='./script.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" id= "home" href="#homee" onClick="window.location.reload()" >HomePage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#ep1">Convert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#ep2">Historic conversion</a>
+            </li>
+          </ul>
+        </div>  
+    </nav>
+
+    <div class="tab-content">
+        <div class="tab-pane container active" id="homee">
+          <div class="jumbotron">
+            <h1>Personal Currency Converter</h1>
+            <h5 class="">That is my personal currency converter website, developed with the objetive of practicing my coding skills and for me to learn better about HTML, CSS and JS elements. Now, I am using bootstrap too!</h5>
+            <h5><br><br>To make it work, I'm using the 
+              <a href="https://fixer.io/"> Fixer API</a> , with the free subscription.</h5>
+          </div>
+        </div>
+
+        <div class="tab-pane container fade" id="ep1">
+          
+          <div class="jumbotron">
+            <h1>Conversão direta de moedas</h1>
+            <h5 class=""> Converta moedas!       </h5>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <div class="jumbotron">
+                <div>
+                    Escolha a moeda a ser convertida:        
+                    <select name="province" style="float: right;" id="moeda1" required>
+                        <option value="none" selected="selected"> -- choose one --
+                    </select>
+                </div>
+                <div style="margin-top: 50px;" >
+                    <br>Escolha a quantidade:
+                    <input type="float" style="float: right;" id="valor1" size="3" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1" style="margin-top: 10%;">
+              <button type="button" class="btn btn-dark" onclick="calculo()">Converter</button>
+            </div>
+            <div class="col-md-5">
+              <div class="jumbotron" >
+                <div>
+                  Escolha a moeda alvo:
+                  <select name="province" style="float: right;" id="moeda2" required>
+                      <option value="none" selected="selected"> -- choose one --
+                  </select>  
+
+                  <div style="margin-top: 50px;">
+                    Quantidade final:
+                        <div id="answer" style="float: right;"></div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+         </div> 
+
+        </div>
+        <div class="tab-pane container fade" id="ep2">
+
+           
+          <div class="jumbotron">
+            <h1>Conversão histórica de moedas</h1>
+            <h5 class=""> Descubra quanto valia uma conversão de moedas na data especificada! </h5>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <div class="jumbotron" style="display:flex; flex-direction: column;">
+                <div>
+                    Escolha a moeda a ser convertida:        
+                    <select name="province" style="float: right;" id="direta1" required>
+                        <option value="none" selected="selected"> -- choose one --
+                    </select>
+                </div>
+                <div style="margin-top: 50px;" >
+                    <br>Escolha a quantidade:
+                    <input type="float" style="float: right;" id="valordireto1" size="3" required>
+                </div>
+
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-2 col-form-label"><br><br>Date</label>
+                  <div class="col-10"><br><br>
+                    <input class="form-control" type="date" value="2011-08-19" id="date-input">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-1" style="margin-top: 10%;">
+              <button type="button" class="btn btn-dark" onclick="calculo2()">Converter</button>
+            </div>
+            <div class="col-md-5">
+              <div class="jumbotron" >
+                <div>
+                  Escolha a moeda alvo:
+                  <select name="province" style="float: right;" id="direta2" required>
+                      <option value="none" selected="selected"> -- choose one --
+                  </select>  
+
+                  <div style="margin-top: 50px;">
+                    Quantidade final:
+                        <div id="answerdireta" style="float: right;"></div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+         </div> 
+
+        </div>
+      </div>
+
+
+</body>
